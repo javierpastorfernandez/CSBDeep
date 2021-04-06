@@ -63,6 +63,7 @@ class BaseConfig(argparse.Namespace):
 
 
     def update_parameters(self, allow_new=True, **kwargs):
+        allow_new=True
         if not allow_new:
             attr_new = []
             for k in kwargs:
