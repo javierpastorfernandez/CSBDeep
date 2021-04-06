@@ -62,7 +62,7 @@ class BaseConfig(argparse.Namespace):
         return (True, tuple()) if return_invalid else True
 
 
-    def update_parameters(self, allow_new=False, **kwargs):
+    def update_parameters(self, allow_new=True, **kwargs):
         if not allow_new:
             attr_new = []
             for k in kwargs:
