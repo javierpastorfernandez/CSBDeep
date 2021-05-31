@@ -199,7 +199,7 @@ class BaseModel(object):
 
 
         return callbacks
-,
+
 
     def _training_finished(self):
         if self.basedir is not None:
